@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="NHDemo" assembly="NHDemo">
+  <class name="Cat" table="Cat">
+    <id name="Id">
+      <column name="CatId" sql-type="char(32)" not-null="true" />
+      <generator class="uuid.hex" />
+    </id>
+    <property name="Name">
+      <column name="Name" length="16" not-null="true" />
+    </property>
+    <property name="Sex" />
+    <property name="Weight" />
+  </class>
+</hibernate-mapping>
